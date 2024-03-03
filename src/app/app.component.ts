@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MainPageComponent } from './home/main-page/main-page.component';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'recipe-sharing-application';
+
 }

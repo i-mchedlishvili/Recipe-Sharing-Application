@@ -4,6 +4,7 @@ import { MainPageComponent } from './main-page/main-page.component';
 import { RecipeDetailsComponent } from './recipe-details/recipe-details.component';
 import { RecipeFormComponent } from './recipe-form/recipe-form.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -15,7 +16,11 @@ import { SearchBarComponent } from './search-bar/search-bar.component';
     SearchBarComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    HttpClientModule
+  ],
+  exports: [
+    MainPageComponent,
   ]
 })
 export class HomeModule { }
